@@ -14,6 +14,7 @@ abstract class IntegrationTestCase extends TestCase
         parent::setUp();
 
         $this->loadMigrationsFrom(__DIR__ . '/../../vendor/avored/framework/database/migrations');
+        $this->loadMigrationsFrom(__DIR__ . '/../../vendor/avored/laravel-ecommerce/modules/avored/demodata/database/migrations');
         
         // and other test setup steps you need to perform
     }
